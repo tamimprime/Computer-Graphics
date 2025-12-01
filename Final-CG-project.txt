@@ -286,6 +286,7 @@ void ally1Move()
         }
         ally1Positiony=2;
     }
+
     ///MOVEMENT
     ally1Positiony-=0.1;
     if(ally1Positiony<-0.1)
@@ -358,10 +359,8 @@ void updateWheel(int value)
         glutTimerFunc(1, updateWheel, 0);
    }
 }
-//**Tamim**//
 
 
-//Rony
 //rain
 void rain()
 {
@@ -523,10 +522,7 @@ void rain()
     glEnd();
 }
 
-//**Rony**//
 
-
-//Ali
 ///Scene
 
 void display1()
@@ -753,9 +749,7 @@ void display1()
     glVertex2f(-0.77f, -0.3f);
 	glEnd();
 
-	//**Ali**//
 	
-	//Arman
 	///cloud 1
 	///circle 1
 	glLoadIdentity();
@@ -903,10 +897,8 @@ void display1()
 	glEnd();
 	glPopMatrix();
 	
-	//**Arman**//
 	
 	
-    //Rony
 	///rain
     if(rainStatus==true)
     {
@@ -991,9 +983,8 @@ void display1()
         glPopMatrix();
     }
 }
-//**Rony**//
 
-//Ali
+
 void sceneautomaticupdate(int value)
 {
     if(scenestatus==true)
@@ -1021,7 +1012,6 @@ void sceneautomaticupdate(int value)
 }
 
 
-//Arman
 
 void shipmovingupdate(int value)
 {
@@ -1066,10 +1056,8 @@ void updateCloud(int value)
     }
     glutTimerFunc(100, updateCloud, 0);
 }
-//**Arman**//
 
 
-//Rony//
 void keyboard(unsigned char key, int x, int y)
 {
    switch (key)
@@ -1087,10 +1075,8 @@ void keyboard(unsigned char key, int x, int y)
          break;
    }
 }
-//**Rony**//
 
 
-//Tamim
 int main(int argc, char** argv)
 {
     glutInit(&argc, argv);
@@ -1109,3 +1095,4 @@ int main(int argc, char** argv)
     return 0;
 
 }
+
